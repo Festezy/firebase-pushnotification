@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Nama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama: " />
+
+        <TextView
+            android:id="@+id/nama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/Nama1"
+            android:text="Ariq Andrean" />
+
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nama1"
+            android:text="Kelas: " />
+
+        <TextView
+            android:id="@+id/kelas2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama2"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/kelas"
+            android:text="Mobile Application" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TOKEN"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kelas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:hint="token"
+        android:minHeight="48dp" />
+</LinearLayout>
